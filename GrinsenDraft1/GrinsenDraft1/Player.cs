@@ -13,7 +13,7 @@ namespace GrinsenDraft1
     class Player : SimpleModel
     {
 
-       
+       //Im testing this out now to see if I have to do this from now on
        
         public float forwardSpeed = 0.3f;
         public bool colliding = false;
