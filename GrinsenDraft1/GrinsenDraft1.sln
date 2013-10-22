@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrinsenDraft1", "GrinsenDraft1\GrinsenDraft1.csproj", "{D1CF3AEB-F6F5-4D32-8E90-2780F05B4F5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1CF3AEB-F6F5-4D32-8E90-2780F05B4F5D}.Debug|x86.ActiveCfg = Debug|x86
+		{D1CF3AEB-F6F5-4D32-8E90-2780F05B4F5D}.Debug|x86.Build.0 = Debug|x86
+		{D1CF3AEB-F6F5-4D32-8E90-2780F05B4F5D}.Release|x86.ActiveCfg = Release|x86
+		{D1CF3AEB-F6F5-4D32-8E90-2780F05B4F5D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
