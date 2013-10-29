@@ -20,12 +20,14 @@ namespace GrinsenDraft1.Objects
         public Vector3 _position;
         RasterizerState _rasterState;
         public BoundingBox AABB { get; set; }
+        public bool passedThrough;
 
         public SimpleModel(string id, string asset, Vector3 position)
             : base(id, position)
         {
             _asset = asset;
             _position = position;
+            passedThrough = false;
         }
 
         public override void LoadContent(ContentManager content)

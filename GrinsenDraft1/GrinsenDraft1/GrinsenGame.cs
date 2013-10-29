@@ -62,7 +62,7 @@ namespace GrinsenDraft1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            engine.LoadScene(new Level(engine));
+            engine.LoadScene(new Level1(engine));
 
         }
 

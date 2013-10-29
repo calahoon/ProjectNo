@@ -72,10 +72,17 @@ namespace GrinsenDraft1.Base
         private void Draw3D()
         {
             if (Cameras.ActiveCamera != null)
+            {
                 for (int i = 0; i < ActiveScene.Objects.Count; i++)
                 {
                     ActiveScene.Objects[i].Draw(Cameras.ActiveCamera);
                 }
+
+                for (int i = 0; i < ActiveScene.BBObjs.Count; i++)
+                {
+                    ActiveScene.BBObjs[i].Draw(Cameras.ActiveCamera);
+                }
+            }
 
             Debug.Draw(Cameras.ActiveCamera);
         }

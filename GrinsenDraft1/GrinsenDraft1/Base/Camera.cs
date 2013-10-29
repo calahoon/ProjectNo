@@ -38,7 +38,7 @@ namespace GrinsenDraft1
         public override void Initialize()
         {
 
-            cameraPosition = new Vector3(0.5700018f, 0.5900002f, 2.719984f);
+            cameraPosition = new Vector3(0.6536992f, 0.5900002f, 3.009872f);
             cameraDirection = new Vector3(-0.2789911f, 0, -0.9662936f);
             //cameraDirection = startTarget - pos;
             //cameraDirection.Normalize();
@@ -106,75 +106,52 @@ namespace GrinsenDraft1
             #region CameraSetPositions
             if (Keyboard.GetState().IsKeyDown(Keys.D1))
             {
-                cameraPosition = new Vector3(0.5700018f, 0.5900002f, 2.719984f);
+                cameraPosition = new Vector3(0.6536992f, 0.5900002f, 3.009872f);
                 cameraDirection = new Vector3(-0.2789911f, 0, -0.9662936f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D2))
             {
-                cameraPosition = new Vector3(2.301701f, 0.8416111f, 2.47299f);
-                cameraDirection = new Vector3(0.8824925f, -0.3465354f, 0.3177167f);
+                cameraPosition = new Vector3(-0.6392952f, 0.7708824f, 1.077051f);
+                cameraDirection = new Vector3(0.2907656f, -0.1029412f, -0.9573004f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D3))
             {
-                cameraPosition = new Vector3(1.349635f, 0.849736f, 2.570147f);
-                cameraDirection = new Vector3(-0.9397489f, -0.3324139f, -0.0789137f);
+                cameraPosition = new Vector3(0.001380169f, 0.655294f, -1.431122f);
+                cameraDirection = new Vector3(0.01214204f, -0.1029412f, -1.00041f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D4))
             {
-                cameraPosition = new Vector3(0.6471494f, 0.7051401f, -0.2803672f);
-                cameraDirection = new Vector3(-0.2896483f, -0.1713896f, -0.9415193f);
+                cameraPosition = new Vector3(0.1668746f, 0.7107349f, -2.935163f);
+                cameraDirection = new Vector3(0.9793568f, -0.1501261f, 0.1726054f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D5))
             {
-                cameraPosition = new Vector3(-0.07407543f, 0.5983807f, -2.624752f);
-                cameraDirection = new Vector3(-0.9972172f, -0.02916069f, 0.01044261f);
+                cameraPosition = new Vector3(0.01676146f, 0.7382159f, -2.93677f);
+                cameraDirection = new Vector3(-0.9771445f, -0.1501261f, 0.1847154f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D6))
             {
-                cameraPosition = new Vector3(0.5522006f, 0.7921423f, -2.230762f);
-                cameraDirection = new Vector3(-0.9458208f, -0.221339f, -0.2270722f);
+                cameraPosition = new Vector3(1.632991f, 0.5485632f, 2.797397f);
+                cameraDirection = new Vector3(1.004516f, -0.04017189f, 0.02797749f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D7))
             {
-                cameraPosition = new Vector3(0.644692f, 0.7806085f, -0.448325f);
-                cameraDirection = new Vector3(-0.3662033f, -0.1764359f, 0.9109585f);
+                cameraPosition = new Vector3(2.26632f, 0.8370246f, 2.48168f);
+                cameraDirection = new Vector3(-0.968888f, -0.2192282f, 0.1570063f);
             }
 
             if (Keyboard.GetState().IsKeyDown(Keys.D8))
             {
-                cameraPosition = new Vector3(-3.292135f, 0.8036986f, 2.571702f);
-                cameraDirection = new Vector3(0.9470115f, -0.1764359f, 0.2590732f);
+                cameraPosition = new Vector3(0.2617446f, 0.7660785f, 3.207691f);
+                cameraDirection = new Vector3(-0.96538f, -0.1580832f, -0.2334675f);
             }
 
-            if (Keyboard.GetState().IsKeyDown(Keys.D9))
-            {
-                cameraPosition = new Vector3(1.045394f, 0.8128154f, 0.1592962f);
-                cameraDirection = new Vector3(-0.1276103f, -0.3399076f, 0.9315752f);
-            }
-
-            if (Keyboard.GetState().IsKeyDown(Keys.D0))
-            {
-                cameraPosition = new Vector3(1.535715f, 0.8610196f, 2.449051f);
-                cameraDirection = new Vector3(0.8810356f, -0.3229031f, 0.338198f);
-            }
-
-            if (Keyboard.GetState().IsKeyDown(Keys.O))
-            {
-                cameraPosition = new Vector3(0.7123739f, 0.811753f, 0.0364262f);
-                cameraDirection = new Vector3(0.9124609f, -0.3192243f, 0.2547633f);
-            }
-
-            if (Keyboard.GetState().IsKeyDown(Keys.P))
-            {
-                cameraPosition = new Vector3(0.8053413f, 0.8135188f, -2.20073f);
-                cameraDirection = new Vector3(0.2748153f, -0.3543718f, 0.8933015f);
-            }
             #endregion
 
             CreateLookAt();
