@@ -20,14 +20,14 @@ namespace GrinsenDraft1.Objects
         public Vector3 _position;
         RasterizerState _rasterState;
         public BoundingBox AABB { get; set; }
-        public bool passedThrough;
+        public float RotationRadians = 0;
 
         public SimpleModel(string id, string asset, Vector3 position)
             : base(id, position)
         {
             _asset = asset;
             _position = position;
-            passedThrough = false;
+            
         }
 
         public override void LoadContent(ContentManager content)
@@ -38,6 +38,8 @@ namespace GrinsenDraft1.Objects
 
                 BoneTransforms = new Matrix[Model3D.Bones.Count];
                 Model3D.CopyAbsoluteBoneTransformsTo(BoneTransforms);
+
+                BoneTransforms[1] *= Matrix.CreateRotationY(MathHelper.ToRadians(RotationRadians));
 
                 List<Vector3> _vertices = new List<Vector3>();
 
@@ -79,7 +81,7 @@ namespace GrinsenDraft1.Objects
                     effect.Projection = camera.Projection;
                     effect.World = BoneTransforms[mesh.ParentBone.Index] * world;
 
-                    //effect.PreferPerPixelLighting = true;
+                    effect.PreferPerPixelLighting = true;
                     effect.EnableDefaultLighting();
                 }
 

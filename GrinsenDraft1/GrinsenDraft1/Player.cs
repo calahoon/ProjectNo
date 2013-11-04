@@ -17,6 +17,7 @@ namespace GrinsenDraft1
        
         public float forwardSpeed = 0.3f;
         public bool colliding = false;
+       
         
         public Vector3 forwardMovement;
 
@@ -37,6 +38,7 @@ namespace GrinsenDraft1
                 forwardMovement = BoneTransforms[1].Up * forwardSpeed;
                 BoneTransforms[1] *= Matrix.CreateTranslation(forwardMovement);
                 UpdateBoundBox(Matrix.CreateTranslation(forwardMovement));
+                _position += forwardMovement;
             }
 
             if (InputEngine.IsKeyHeld(Keys.R))
@@ -46,6 +48,8 @@ namespace GrinsenDraft1
                 BoneTransforms[1] *= Matrix.CreateTranslation(-offset);
                 BoneTransforms[1] *= Matrix.CreateRotationY(MathHelper.ToRadians(1.0f));
                 BoneTransforms[1] *= Matrix.CreateTranslation(offset);
+                RotationRadians += 1.0f;
+                
             }
 
             if (InputEngine.IsKeyHeld(Keys.T))
@@ -55,7 +59,7 @@ namespace GrinsenDraft1
                 BoneTransforms[1] *= Matrix.CreateTranslation(-offset);
                 BoneTransforms[1] *= Matrix.CreateRotationY(MathHelper.ToRadians(-1.0f));
                 BoneTransforms[1] *= Matrix.CreateTranslation(offset);
-
+                RotationRadians -= 1.0f;
             }
 
             base.Update(gametime);

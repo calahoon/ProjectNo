@@ -38,8 +38,8 @@ namespace GrinsenDraft1
         public override void Initialize()
         {
 
-            cameraPosition = new Vector3(0.6536992f, 0.5900002f, 3.009872f);
-            cameraDirection = new Vector3(-0.2789911f, 0, -0.9662936f);
+            cameraPosition = new Vector3(0,0,0);
+            cameraDirection = new Vector3(0,0,0);
             //cameraDirection = startTarget - pos;
             //cameraDirection.Normalize();
             cameraUpDirection = Vector3.Up;
@@ -150,6 +150,12 @@ namespace GrinsenDraft1
             {
                 cameraPosition = new Vector3(0.2617446f, 0.7660785f, 3.207691f);
                 cameraDirection = new Vector3(-0.96538f, -0.1580832f, -0.2334675f);
+            }
+
+            if (Keyboard.GetState().IsKeyDown(Keys.D9))
+            {
+                cameraPosition = new Vector3(0.22278f, 7.971625f, 2.774293f);
+                cameraDirection = new Vector3(-0.001026352f, -0.9562739f, -0.2873542f);
             }
 
             #endregion

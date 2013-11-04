@@ -57,16 +57,16 @@ namespace GrinsenDraft1.Engines
 
         public override void Draw(GameTime gameTime)
         {
-            frameCounter++;
+            //frameCounter++;
 
-            _batch.Begin();
+            //_batch.Begin();
 
-            if (frameRate < 25)
-                _batch.DrawString(_sfont, "FPS:" + frameRate, _position, Color.Red);
-            else
-                _batch.DrawString(_sfont, "FPS: " + frameRate, _position, Color.LawnGreen);
+            //if (frameRate < 25)
+            //    _batch.DrawString(_sfont, "FPS:" + frameRate, _position, Color.Red);
+            //else
+            //    _batch.DrawString(_sfont, "FPS: " + frameRate, _position, Color.LawnGreen);
 
-            _batch.End();
+            //_batch.End();
 
             base.Draw(gameTime);
         }

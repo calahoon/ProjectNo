@@ -78,10 +78,10 @@ namespace GrinsenDraft1.Base
                     ActiveScene.Objects[i].Draw(Cameras.ActiveCamera);
                 }
 
-                for (int i = 0; i < ActiveScene.BBObjs.Count; i++)
-                {
-                    ActiveScene.BBObjs[i].Draw(Cameras.ActiveCamera);
-                }
+                //for (int i = 0; i < ActiveScene.BBObjs.Count; i++)
+                //{
+                //    ActiveScene.BBObjs[i].Draw(Cameras.ActiveCamera);
+                //}
             }
 
             Debug.Draw(Cameras.ActiveCamera);
